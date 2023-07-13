@@ -66,8 +66,8 @@ MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
 <!-- Stack Icon Refernces -->
 
 [html]: /images/stack/html.svg
-[css]: /iamges/stack/css.svg
-[js]: /imges/stack/js.svg
+[css]: /images/stack/css.svg
+[js]: /images/stack/js.svg
 [react]: /images/stack/react.svg
 [figma]: /images/stack/figma.svg
 [notion]: /images/stack/notion.svg
