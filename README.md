@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="![comma]">
+  <img src="./images/comma.png">
   <br>
 </p>
 
@@ -65,13 +65,11 @@ MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
 
 <!-- Stack Icon Refernces -->
 
-[comma] : /images/comma.
-[html] : /images/stack/html.svg
-[css] : /iamges/stack/css.svg
-[js] : /imges/stack/js.svg
-[react] : /images/stack/react.svg
+[html]: /images/stack/html.svg
+[css]: /iamges/stack/css.svg
+[js]: /imges/stack/js.svg
+[react]: /images/stack/react.svg
+[figma]: /images/stack/figma.svg
+[notion]: /images/stack/notion.svg
 
 <!-- [next] : /images/stack/next.svg -->
-
-[figma] : /images/stack/figma.svg
-[notion] : /images/stack/notion.svg
