@@ -67,7 +67,7 @@ MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
 
 [html]: /images/stack/html.svg
 [css]: /images/stack/css.svg
-[js]: /images/stack/js.svg
+[js]: /images/stack/javascript.svg
 [react]: /images/stack/react.svg
 [figma]: /images/stack/figma.svg
 [notion]: /images/stack/notion.svg
