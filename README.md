@@ -35,6 +35,47 @@
 
 <br>
 
+
+## 구현 기능
+
+### 상세 날씨 정보
+
+### 상세 교통 정보 제공
+
+### 지역 인구 밀집 정보 (혼잡도) 제공
+
+### 각종 시위 정보 및 행사 정보 (생활 안전 정보) 제공
+
+<br>
+
+## 기대 효과
+
+> 사회적 약자의 도시 생활 안전 향상
+
+> 스마트시티를 위한 사용자 참여도 향상
+
+<p align="justify">
+
+</p>
+
+<br>
+
+<!-- ## 라이센스
+
+MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
+
+<!-- Stack Icon Refernces -->
+
+[html]: /images/stack/html.svg
+[css]: /images/stack/css.svg
+[js]: /images/stack/javascript.svg
+[react]: /images/stack/react.svg
+[figma]: /images/stack/figma.svg
+[notion]: /images/stack/notion.svg
+
+<br>
+
+
 <!-- commit rule 관련 -->
 
 
@@ -149,42 +190,6 @@
 
 
 <!-- 위와 동일 -->
-## 구현 기능
-
-### 상세 날씨 정보
-
-### 상세 교통 정보 제공
-
-### 지역 인구 밀집 정보 (혼잡도) 제공
-
-### 각종 시위 정보 및 행사 정보 (생활 안전 정보) 제공
-
-<br>
-
-## 기대 효과
-
-> 사회적 약자의 도시 생활 안전 향상
-
-> 스마트시티를 위한 사용자 참여도 향상
-
-<p align="justify">
-
-</p>
-
-<br>
-
-<!-- ## 라이센스
-
-MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
-
-<!-- Stack Icon Refernces -->
-
-[html]: /images/stack/html.svg
-[css]: /images/stack/css.svg
-[js]: /images/stack/javascript.svg
-[react]: /images/stack/react.svg
-[figma]: /images/stack/figma.svg
-[notion]: /images/stack/notion.svg
 
 
 
