@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="./images/comma.png">
+  <img src="static/images/comma.png">
   <br>
 </p>
 
@@ -32,7 +32,6 @@
 | ![html] | ![css] |   ![js]    | ![react] | ![figma] | ![notion] |
 
 <br>
-
 
 ## 구현 기능
 
@@ -64,15 +63,14 @@ MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
 
 <!-- Stack Icon Refernces -->
 
-[html]: /images/stack/html.svg
-[css]: /images/stack/css.svg
-[js]: /images/stack/javascript.svg
-[react]: /images/stack/react.svg
-[figma]: /images/stack/figma.svg
-[notion]: /images/stack/notion.svg
+[html]: static/images/stack/html.svg
+[css]: static/images/stack/css.svg
+[js]: static/images/stack/javascript.svg
+[react]: static/images/stack/react.svg
+[figma]: static/images/stack/figma.svg
+[notion]: static/images/stack/notion.svg
 
 <br>
-
 
 <!-- commit rule (컨벤션) 관련 -->
 
@@ -87,7 +85,7 @@ MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
 
 ### 형식
 
-> Head 타입 : [#이슈 번호 - ] 
+> Head 타입 : [#이슈 번호 - ]
 >
 > Body
 >
@@ -163,7 +161,6 @@ MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
 3. 마지막에 **특수문자 삽입 X**
 4. **개조식** 구문 ( 간결, 요점적인 서술 )
 
-
 ### BODY
 
 본문은 다음과 같은 규칙을 가진다.
@@ -172,11 +169,9 @@ MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
 2. **최대한 상세히 작성**
 3. 어떻게보단 **무엇, 왜**에 중점적으로 작성한다.
 
-
 ### FOOTER
 
 1. **이슈 트래커 ID**를 작성한다. `"유형: #이슈 번호"`
-
 
 > Feat: 추가 Infinity Scroll 기능
 >
@@ -185,13 +180,7 @@ MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
 >
 > Reslves: #321
 
-
-
 <!-- 위와 동일 -->
-
-
-
-
 
 <!-- # 참고 사이트
 
