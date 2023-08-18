@@ -9,4 +9,5 @@ window.addEventListener("click", (e) => {
   e.target === signupContainer
     ? signupContainer.classList.add("hidden")
     : false;
+
 });
