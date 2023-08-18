@@ -4,7 +4,6 @@ const locationContent = document.querySelector("#locationContent");
 const gpsLocation = document.querySelector("#gpsLocation");
 
 handleLocation.addEventListener("click", () => {
-  console.log("ok");
   locationConatiner.classList.remove("hidden");
 });
 
