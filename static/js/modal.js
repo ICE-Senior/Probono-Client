@@ -1,5 +1,6 @@
 const signupContainer = document.querySelector("#signup-container");
-const signupBtn = document.querySelector("#signup");
+const signupBtn = document.querySelector(".sign_up");
+
 
 signupBtn.addEventListener("click", () => {
   signupContainer.classList.remove("hidden");
