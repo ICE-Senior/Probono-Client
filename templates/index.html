@@ -19,6 +19,8 @@
         </div>
       </div>
     </div>
+
+
     <!-- 회원가입 모달 -->
     <div id="signup-container" class="hidden">
       <div id="signup-content" class="modal-content">
@@ -76,6 +78,19 @@
         </form>
       </div>
     </div>
+
+    <div id="login-container" class="hidden">
+      <div id="login-content" class="modal-content">
+            <form id="loginForm" name="login" action="/login" method="post">
+                <label for="userid">Username</label>
+                <input type="text" id="userid" name="userid" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+      </div>
+    </div>
+
     <!-- { 헤더 재난 정보 백에서 받아와야 함 } -->
     <header>
       <span>서울특별시 전역 폭염주의보 발령</span>
@@ -97,7 +112,7 @@
       </nav>
       <nav id="right-nav">
         <div id="user">
-          <div id="login"><a>로그인</a></div>
+          <div id="login-btn"><a>로그인</a></div>
           <div id="signup"><a>회원가입</a></div>
           <!-- <div><a>마이페이지</a></div> -->
           <!-- <div><a>로그아웃</a></div> -->
@@ -123,5 +138,7 @@
     <script src="../static/js/location.js"></script>
     <script src="../static/js/modal.js"></script>
     <script src="../static/js/sign_up.js"></script>
+    <script src="../static/js/login.js"></script>
+
   </body>
 </html>
