@@ -72,8 +72,6 @@ MIT &copy; [NoHack](mailto:lbjp114@gmail.com) -->
 
 <br>
 
-<!-- commit rule (컨벤션) 관련 -->
-
 
 # 커밋 룰
 
