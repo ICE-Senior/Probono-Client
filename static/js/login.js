@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   // DOMContentLoaded => JavaScript 이벤트의 하나로, 웹 페이지의 모든 HTML 콘텐츠가 로드되고 파싱된 후에 발생하는 이벤트
-  
   const logButton = document.getElementById("login-logout");
   const modal = document.getElementById("login-container");
   const loginForm = document.getElementById("loginForm");
@@ -27,6 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    logButton.classList.remove("login");
+    logButton.classList.add("logout");
+    logButton.querySelector("a").innerHTML = "logout";
+    statusBtn.classList.remove("sign_up");
+    statusBtn.classList.add("mypage");
+    statusBtn.querySelector("a").innerHTML = "마이페이지";
     const formData = new FormData(loginForm);
     fetch("/login/", {
       method: "POST",
@@ -39,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
-          // 로그인이 성공하면 처리할 코드 작성
           console.log("로그인 성공!");
           window.location.reload(); // 페이지 리로드
         } else {
