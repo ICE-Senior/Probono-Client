@@ -1,13 +1,18 @@
-const signupContainer = document.querySelector("#signup-container");
-const signupBtn = document.querySelector(".sign_up");
+document.addEventListener("DOMContentLoaded", () => {
+  const signupContainer = document.querySelector("#signup-container");
+  const signupBtn = document.querySelector("#signup-mypage");
 
+  signupBtn.addEventListener("click", () => {
+    if (signupBtn.classList[0] === "sign_up") {
+      signupContainer.classList.remove("hidden");
+    } else {
+      window.location.href = "/my_page";
+    }
+  });
 
-signupBtn.addEventListener("click", () => {
-  signupContainer.classList.remove("hidden");
-});
-
-window.addEventListener("click", (e) => {
-  e.target === signupContainer
-    ? signupContainer.classList.add("hidden")
-    : false;
+  window.addEventListener("click", (e) => {
+    e.target === signupContainer
+      ? signupContainer.classList.add("hidden")
+      : false;
+  });
 });
