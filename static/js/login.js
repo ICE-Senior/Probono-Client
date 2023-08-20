@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const logButton = document.querySelector(".login-logout");
   const modal = document.getElementById("login-container");
   const loginForm = document.getElementById("loginForm");
+  const statusBtn = document.querySelector("#signup-mypage");
 
   logButton.addEventListener("click", () => {
     if (logButton.id === "login") {
@@ -19,6 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
+    logButton.classList.remove("login");
+    logButton.classList.add("logout");
+    logButton.querySelector("a").innerHTML = "logout";
+    statusBtn.classList.remove("sign_up");
+    statusBtn.classList.add("mypage");
+    statusBtn.querySelector("a").innerHTML = "마이페이지";
     const formData = new FormData(loginForm);
     fetch("/login", {
       method: "POST",
