@@ -1,20 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   // DOMContentLoaded => JavaScript 이벤트의 하나로, 웹 페이지의 모든 HTML 콘텐츠가 로드되고 파싱된 후에 발생하는 이벤트
-  const logButton = document.getElementById("login-logout");
+
+  const logButton = document.querySelector(".login-logout");
   const modal = document.getElementById("login-container");
   const loginForm = document.getElementById("loginForm");
   const statusBtn = document.querySelector("#signup-mypage");
 
   logButton.addEventListener("click", () => {
-    if (logButton.classList[0] === "login") {
+    if (logButton.id === "login") {
       modal.classList.remove("hidden");
-    } else {
-      logButton.classList.remove("logout");
-      logButton.classList.add("login");
-      logButton.querySelector("a").innerHTML = "login";
-      statusBtn.classList.add("sign_up");
-      statusBtn.classList.remove("mypage");
-      statusBtn.querySelector("a").innerHTML = "회원가입";
     }
   });
 
@@ -33,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     statusBtn.classList.add("mypage");
     statusBtn.querySelector("a").innerHTML = "마이페이지";
     const formData = new FormData(loginForm);
-    fetch("/login/", {
+    fetch("/login", {
       method: "POST",
       body: formData,
       headers: {
@@ -43,6 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
       .then((response) => response.json())
       .then((data) => {
+        if (data.redirect_url) {
+          window.location.href = data.redirect_url;
+        }
         if (data.success) {
           console.log("로그인 성공!");
           window.location.reload(); // 페이지 리로드
@@ -55,13 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       })
       .catch((error) => {
-        alert(error);
-        logButton.classList.remove("login");
-        logButton.classList.add("logout");
-        logButton.querySelector("a").innerHTML = "logout";
-        statusBtn.classList.remove("sign_up");
-        statusBtn.classList.add("mypage");
-        statusBtn.querySelector("a").innerHTML = "마이페이지";
+        console.log(error);
       });
   });
 
