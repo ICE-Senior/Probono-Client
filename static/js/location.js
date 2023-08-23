@@ -58,6 +58,7 @@ const posOk = (position) => {
       console.error("Error:", error);
     });
 
+
   alert(`지역 설정을 ${lat}, ${lon}로 완료했습니다`);
   locationConatiner.classList.add("hidden");
 };

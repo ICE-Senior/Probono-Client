@@ -60,6 +60,7 @@ function checkPasswords() {
 pwFlag = passwordInput.addEventListener("input", checkPasswords);
 pwFlag = confirmPasswordInput.addEventListener("input", checkPasswords);
 
+
 document.querySelector("#sign-up-form").addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -90,5 +91,3 @@ document.querySelector("#sign-up-form").addEventListener("submit", (event) => {
     else alert("동일한 비밀번호로 가입해주세요");
   }
 });
-
-//

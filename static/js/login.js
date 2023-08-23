@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const logButton = document.querySelector(".login-logout");
   const modal = document.getElementById("login-container");
+
   logButton.addEventListener("click", () => {
     if (logButton.id === "login") {
       modal.classList.remove("hidden");
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const formData = new FormData(loginForm);
     const response = await fetch("/login/", {
+
       method: "POST",
       body: formData,
       headers: {
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "X-CSRFToken": getCSRFToken(), // CSRF 토큰 추가
       },
     });
+
 
     const responseData = await response.json();
     if (response.ok) {
