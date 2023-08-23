@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "/my_page";
     }
   });
+
+
   window.addEventListener("click", (e) => {
     e.target === signupContainer
       ? signupContainer.classList.add("hidden")
